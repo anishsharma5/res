@@ -7,7 +7,8 @@ const app = express();
 dotenv.config({path:'./config.env'})
 app.use(express.json());
 require('./db/connect');
-
+ const cors = require("cors");
+app.use(cors());
 
 // const User=require("./model/userSchema")
 
