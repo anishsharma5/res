@@ -1,11 +1,13 @@
 const dotenv=  require("dotenv")
 
-const mongoose = require("mongoose")
+
+
 const express = require("express")
 const app = express();
 dotenv.config({path:'./config.env'})
 app.use(express.json());
-require('./db/connect')
+require('./db/connect');
+
 
 // const User=require("./model/userSchema")
 
@@ -14,7 +16,7 @@ require('./db/connect')
 app.use(require('./router/auth'))
 
 
- const PORT = process.env.PORT|| 4000
+ const PORT = process.env.PORT
 
  
 
