@@ -31,16 +31,7 @@ app.use(require('./router/auth'))
  app.get("/",(req,res)=>{
   res.status(200).send("Hello World")
  })
-//  app.get("/about", middleware,(req,res)=>{
-//   res.status(200).send("Hello from about")
-//  })
- 
-//  app.get("/signup",(req,res)=>{
-//   res.status(200).send("Hello from signin")
-//  })
-//  app.get("/loginin",(req,res)=>{
-//   res.status(200).send("Hello from login")
-//  })
+
  app.listen(PORT,()=>{
   console.log(`server is running at 4000 ${PORT}`);
  })
